@@ -16,7 +16,7 @@ class AdminController extends Controller
         if (!$request->user()->hasRoles(['admin'])) {
             abort(401);
         }
-        $users = User::orderBy('created_at', 'desc')-take(10)->toArray();
+        $users = User::orderBy('created_at', 'desc')->take(10)->get();
         return view('admin.index', ['users' => $users]);
     }
 
