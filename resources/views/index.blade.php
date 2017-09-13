@@ -1,7 +1,11 @@
-<?php
-/**
- * Created by IntelliJ IDEA.
- * User: kschamplin19
- * Date: 9/11/17
- * Time: 20:26
- */
+@extends('layouts.app')
+
+@section('content')
+    <div class="container">
+        <div class="row text-center">
+            <h1>beartime 2.0</h1>
+            <h4>Electric Boogaloo</h4>
+
+        </div>
+    </div>
+@endsection

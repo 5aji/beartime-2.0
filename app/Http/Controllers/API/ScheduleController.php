@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
 use App\Schedule;
-use DateTime;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ScheduleController extends Controller
+class ScheduleResourceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,16 +16,6 @@ class ScheduleController extends Controller
     public function index()
     {
         return response()->json(Schedule::all());
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-
     }
 
     /**

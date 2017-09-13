@@ -29,7 +29,17 @@ class User extends Authenticatable
     public function classes() {
         return $this->hasMany('App\ClassConfig');
     }
+
     public function role() {
         return $this->belongsTo('App\Role');
+    }
+
+    /**
+     * Returns true if the user has any of the roles
+     * @param array $roles Roles to check (all lowercase)
+     * @return bool
+     */
+    public function hasRoles($roles) {
+        return in_array(strtolower($this->role()->first()->name), $roles);
     }
 }

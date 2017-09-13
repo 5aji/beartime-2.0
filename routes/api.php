@@ -13,11 +13,13 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-Route::get('/schedule', 'ScheduleController@day');
-Route::get('/schedule/week', 'ScheduleController@week');
 
-Route::get('/schedules', 'ScheduleController@index');
-Route::get('/schedules/{id}', 'ScheduleController@show');
+Route::namespace('API')->group(function () {
+    // Controllers Within The "App\Http\Controllers\API" Namespace
+    Route::get('/schedule', 'ScheduleController@day');
+    Route::get('/schedule/week', 'ScheduleController@week');
+
+    Route::get('/schedules', 'ScheduleController@index');
+    Route::get('/schedules/{id}', 'ScheduleController@show');
+});
+

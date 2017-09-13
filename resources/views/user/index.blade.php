@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
 @section('crumb')
-    home
+    users
 @endsection
-
 
 @section('content')
     <div class="container">
