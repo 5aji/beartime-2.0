@@ -9,7 +9,6 @@ class ClassConfig extends Model
     //
     protected $fillable = [
         'block',
-        'user_id',
         'name',
         'day',
     ];

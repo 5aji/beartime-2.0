@@ -9,7 +9,7 @@ use App\User;
 class UserControllerTest extends TestCase
 {
     public function testUserCanAccessHomePage() {
-        $user = factory(User::class)->create();
+        $user = factory(User::class)->make();
 
         $response = $this->actingAs($user)->get('/home');
 

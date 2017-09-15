@@ -42,4 +42,19 @@ class User extends Authenticatable
     public function hasRoles($roles) {
         return in_array(strtolower($this->role()->first()->name), $roles);
     }
+
+    /**
+     * Returns a custom schedule for the user.
+     * @param Schedule $schedule The schedule to process
+     * @return Schedule $output The output
+     */
+    public function customizeSchedule(Schedule $schedule) {
+        $classes = $this->classes()->get();
+        foreach($schedule->blocks()->get() as $block) {
+            if ($block->number !== null) {
+                // the block has number, find it.
+
+            }
+        }
+    }
 }

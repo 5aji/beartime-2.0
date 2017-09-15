@@ -2,6 +2,8 @@
 
 namespace App;
 
+use Carbon\Carbon;
+use Faker\Provider\DateTime;
 use Illuminate\Database\Eloquent\Model;
 
 class Schedule extends Model
@@ -12,12 +14,12 @@ class Schedule extends Model
         'name',
         'date',
     ];
-    /*
+
     protected $with = [
         'blocks'
     ];
-    */
-    public function blocks() {
+    public function blocks()
+    {
         return $this->hasMany('App\Block');
     }
 
@@ -25,16 +27,43 @@ class Schedule extends Model
      * @param string $date optional date to check.
      * @return Schedule $today the schedule for that day.
      */
-    public static function day($date = null) {
-        if ((date('Y-m-d', strtotime($date)) == $date)) {
-            if (Schedule::where('date', $date)->exists()) {
-                // there is a custom schedule for that date.
-                return Schedule::where('date', $date)->first();
-            } else {
-                // we are given a date but there is no schedule. return DOTW.
-                return Schedule::where('name', date('l', strtotime($date)))->first();
-            }
+    public static function day($date = null)
+    {
+        if ($date == null) {
+            $date = Carbon::now();
+        } else {
+            $date = new Carbon($date);
         }
-        return Schedule::where('name', date('l'))->first();
+
+        if (Schedule::where('date', $date->toDateString())->exists()) {
+            // there is a custom schedule for that date.
+            return Schedule::where('date', $date->toDateString())->first();
+        } else {
+            // we are given a date but there is no schedule. return DOTW.
+            return Schedule::where('name', $date->format('l'))->first();
+        }
+
+    }
+
+    /**
+     * Returns an array of schedules for the specified week.
+     * @param DateTime $date A day of the week (any day works)
+     * @return array $week
+     */
+    public static function week($date = null)
+    {
+        if ($date == null) {
+            $date = Carbon::now();
+        } else {
+            $date = new Carbon($date);
+        }
+        $date->startOfWeek();
+        $week = array();
+        for ($i = 1; $i <= 5; $i++) {
+            $schedule = Schedule::day($date);
+            $week[$date->format('l')] = $schedule;
+            $date->addDay();
+        }
+        return $week;
     }
 }

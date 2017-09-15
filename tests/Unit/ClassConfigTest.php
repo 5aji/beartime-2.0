@@ -22,6 +22,7 @@ class ClassConfigTest extends TestCase
         $user->classes()->save(factory(ClassConfig::class)->make());
 
         $this->assertTrue($user->classes()->count() == 1);
+        $user->delete();
     }
 
     public function testUserCanSeeAllOfTheirClassConfigs()
@@ -34,5 +35,7 @@ class ClassConfigTest extends TestCase
 
         }
         $this->assertEquals($user->classes()->get()->count(), 4);
+        $user->delete();
+
     }
 }

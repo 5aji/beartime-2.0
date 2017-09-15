@@ -21,7 +21,7 @@ class ScheduleDayTest extends TestCase
         $date = '2017-09-12';
         $this->assertEquals(Schedule::day($date), Schedule::find(2));
     }
-    public function testDayReturnsSpecialScheduleWhenOneExistsw() {
+    public function testDayReturnsSpecialScheduleWhenOneExists() {
         //use factory to make special schedule, take the date of it, load into funciton, compare id.
         $special_schedule = factory(Schedule::class)->states(['special'])->create();
         $this->assertEquals($special_schedule->id, Schedule::day($special_schedule->date)->id);

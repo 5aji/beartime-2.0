@@ -12,7 +12,7 @@ class AdminControllerTest extends TestCase
 
     public function testAdminCanUseAdminPage()
     {
-        $admin = factory(User::class)->states(['is_admin'])->create();
+        $admin = factory(User::class)->states(['is_admin'])->make();
 
         $response = $this->actingAs($admin)->get('/admin');
 
@@ -21,7 +21,7 @@ class AdminControllerTest extends TestCase
 
     public function testUserIsUnauthorizedToUseAdminPage()
     {
-        $user = factory(User::class)->create();
+        $user = factory(User::class)->make();
 
         $response = $this->actingAs($user)->get('/admin');
 
