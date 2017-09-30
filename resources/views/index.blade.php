@@ -92,11 +92,12 @@
 @endsection
 
 @section('content')
+    @include('layouts.navbar')
     <div class="ui inverted vertical masthead center aligned segment">
         <div class="ui text container">
             <h1 class="ui inverted header">beartime 2.0</h1>
             <h2>Electric Boogaloo</h2>
-            <a class="ui huge primary button" href="{{ @route('user.home') }}" data-content="Level Up">
+            <a class="ui huge primary button" href="{{ @route('user.dashboard') }}">
                 Launch
                 <i class="right arrow icon"></i>
             </a>

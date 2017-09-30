@@ -17,13 +17,13 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'UserController@home')->name('user.home');
+Route::get('/dashboard', 'UserController@home')->name('user.dashboard');
 Route::get('/options', 'UserController@options')->name('user.options');
 
 
 
 Route::prefix('admin')->middleware(['auth'])->group(function () {
-    Route::get('/', 'AdminController@index')->name('admin.index');
+    Route::get('/', 'AdminController@index')->name('admin.dashboard');
     Route::resource('users', 'UserResourceController');
     Route::resource('schedules', 'ScheduleResourceController');
 });
