@@ -12,98 +12,67 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/semantic.css') }}" rel="stylesheet">
+    @yield('styles')
 </head>
+
 <body>
 <div id="app">
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
+    <div class="pusher">
 
-                <!-- Collapsed Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#app-navbar-collapse">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+        <div class="ui top huge inverted attached pointing menu">
+            <div class="ui container">
+                <a class="item">
+                    Home
                 </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
-                    {{--TODO: add little arrow doodad--}}
-                    &nbsp;<li>
-                        <div class="navbar-brand">
-                            @yield('crumb')
+                <a class="item">
+                    Download
+                </a>
+                @guest
+                    <div class="right menu">
+                        <a class="item button inverted" href="{{ @route('login') }}">Login</a>
+                        <a class="item button inverted" href="{{ @route('register') }}">Register</a>
+                    </div>
+                @endguest
+                @auth
+                    <div class="right menu">
+                        <div class="ui pointing above item dropdown">
+                            {{ Auth::user()->name }}
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a class="item" href="{{ @route('user.options') }}">
+                                    Options
+                                </a>
+                                <a class="item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                      style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </div>
 
-                <!-- Right Side Of Navbar -->
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Authentication Links -->
-                    @guest
-                        <li><a href="{{ route('login') }}">Login</a></li>
-                        <li><a href="{{ route('register') }}">Register</a></li>
-                    @endguest
-                    @auth
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                               aria-expanded="false">
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
 
-                            <ul class="dropdown-menu" role="menu">
-                                @if(Auth::user()->hasRoles(['admin']))
-                                    <li>
-                                        <a href="{{ route('admin.index') }}">
-                                            Admin Console
-                                        </a>
-                                    </li>
-                                @endif
-                                @if(Auth::user()->hasRoles(['moderator']))
-                                    <li>
-                                        {{--FIXME: route to proper place--}}
-                                        <a href="{{ route('admin.index') }}">
-                                            Moderator Console
-                                        </a>
-                                    </li>
-                                @endif
-                                <li>
-                                    <a href="{{ route('user.options') }}">
-                                        Options
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        Logout
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                          style="display: none;">
-                                        {{ csrf_field() }}
-                                    </form>
-                                </li>
-                            </ul>
-                        </li>
-                    @endauth
-                </ul>
+                @endauth
             </div>
-        </div>
-    </nav>
 
-    @yield('content')
+        </div>
+
+        @yield('content')
+    </div>
 </div>
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/semantic.js') }}"></script>
+<script src="{{ asset('js/laroute.js') }}"></script>
+<script>
+    $('.ui.dropdown')
+        .dropdown({transition: 'drop', on: 'hover'})
+    ;
+</script>
 </body>
 </html>

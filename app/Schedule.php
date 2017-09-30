@@ -57,6 +57,7 @@ class Schedule extends Model
         } else {
             $date = new Carbon($date);
         }
+        
         $date->startOfWeek();
         $week = array();
         for ($i = 1; $i <= 5; $i++) {

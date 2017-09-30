@@ -6,7 +6,7 @@ use App\Schedule;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ScheduleResourceController extends Controller
+class ScheduleController extends Controller
 {
     /**
      * Display a listing of the resource.

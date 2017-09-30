@@ -11,5 +11,18 @@ let mix = require('laravel-mix');
  |
  */
 
+
+mix.webpackConfig({
+    resolve: {
+        alias: {
+            // Force all modules to use the same jquery version.
+            'jquery': path.join(__dirname, 'node_modules/jquery/src/jquery')
+        }
+    }
+});
+
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+    .js('resources/assets/semantic/dist/semantic.min.js', 'public/js')
+    .styles(['resources/assets/semantic/dist/semantic.min.css'], 'public/css/semantic.css')
+    .copy('resources/assets/semantic/dist/themes', 'public/css/themes')
+    .sass('resources/assets/sass/app.scss', 'public/css');

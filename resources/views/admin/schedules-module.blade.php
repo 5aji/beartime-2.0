@@ -17,7 +17,7 @@
                     <th>{{ $schedule->name }}</th>
                     <th>{{ $schedule->date }}</th>
                     <th><a class="btn btn-primary btn-sm"
-                           href="{{@route('users.show', $schedule->id)}}">Edit</a></th>
+                           href="{{@route('schedules.show', $schedule->id)}}">Edit</a></th>
                 </tr>
             @endforeach
             </tbody>
@@ -25,6 +25,6 @@
     </div>
     <div class="panel-footer">
         <a class="btn btn-primary"
-           href="{{@route('users.show', $schedule->id)}}">Show More</a>
+           href="{{@route('schedules.index')}}">Show More</a>
     </div>
 </div>

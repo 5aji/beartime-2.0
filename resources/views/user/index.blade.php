@@ -7,7 +7,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <example></example>
+            <RadialView></RadialView>
         </div>
     </div>
 @endsection

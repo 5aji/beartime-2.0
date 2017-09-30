@@ -1,37 +1,49 @@
-@extends('layouts.app)
+@extends('layouts.app')
 
 @section('crumb')
-    Schedule - {{ $schedule->name }}
+    view schedule
 @endsection
+
 @section('content')
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            Schedules
-        </div>
-        <div class="panel-body">
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Date</th>
-                    <th>Classes</th>
-                </tr>
-                </thead>
-                <tbody>
-                @foreach(App\Schedule::paginate(10) as  $schedule)
-                    <tr>
-                        <th>{{ $schedule->name }}</th>
-                        <th>{{ $schedule->date }}</th>
-                        <th><a class="btn btn-primary btn-sm"
-                               href="{{@route('users.show', $schedule->id)}}">Edit</a></th>
-                    </tr>
-                @endforeach
-                </tbody>
-            </table>
-        </div>
-        <div class="panel-footer">
-            <a class="btn btn-primary"
-               href="{{@route('users.show', $schedule->id)}}">Show More</a>
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                {{ $schedule->name }}
+                            </div>
+                            <div class="panel-body">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>Number</th>
+                                        <th>Name</th>
+                                        <th>Start Time</th>
+                                        <th>End Time</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    @foreach($schedule->blocks as  $block)
+                                        <tr>
+                                            <td>{{ $block->number }}</td>
+                                            <td>{{ $block->name}}</td>
+                                            <td>{{ $block->start_time }}</td>
+                                            <td>{{ $block->end_time }}</td>
+                                        </tr>
+                                    @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="panel-footer">
+                                <a class="btn btn-primary"
+                                   href="{{@route('schedules.edit', $schedule)}}">Edit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

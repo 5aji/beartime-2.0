@@ -16,6 +16,8 @@ window.Vue = require('vue');
  */
 
 Vue.component('example', require('./components/Example.vue'));
+Vue.component('scheduleform', require('./components/ScheduleForm.vue'));
+Vue.component('RadialView', require('./components/RadialView.vue'));
 
 const app = new Vue({
     el: '#app'

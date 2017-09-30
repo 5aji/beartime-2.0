@@ -8,7 +8,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <example></example>
+            <radial-view></radial-view>
         </div>
     </div>
 @endsection

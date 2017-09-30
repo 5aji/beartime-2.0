@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreSchedule;
 use App\Schedule;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,8 @@ class ScheduleResourceController extends Controller
     public function index()
     {
         //
-        return view('schedule.index');
+        $schedules = Schedule::all();
+        return view('schedule.index')->with('schedules', $schedules);
     }
 
     /**
@@ -26,18 +28,23 @@ class ScheduleResourceController extends Controller
     public function create()
     {
         //
+        return view('schedule.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  StoreSchedule  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreSchedule $request)
     {
         //
-    }
+        $schedule = Schedule::create();
+        $schedule->name = $request->name;
+        $schedule->number = $request->number;
+        $schedule->blocks()->createMany($request->blocks);
+     }
 
     /**
      * Display the specified resource.
@@ -48,6 +55,7 @@ class ScheduleResourceController extends Controller
     public function show(Schedule $schedule)
     {
         //
+        return view('schedule.show', ['schedule' => $schedule]);
     }
 
     /**
@@ -58,7 +66,7 @@ class ScheduleResourceController extends Controller
      */
     public function edit(Schedule $schedule)
     {
-        //
+        return view('schedule.edit', ['schedule' => $schedule]);
     }
 
     /**
@@ -82,5 +90,6 @@ class ScheduleResourceController extends Controller
     public function destroy(Schedule $schedule)
     {
         //
+        $schedule->delete();
     }
 }

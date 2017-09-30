@@ -51,16 +51,16 @@ class UserResourceController extends Controller
      * Display the specified resource.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\User $user
      * @return \Illuminate\Http\Response
      */
-    public function show(Request $request, $id)
+    public function show(Request $request, User $user)
     {
         //
         if (!$request->user()->hasRoles(['admin'])) {
             abort(401, 'Did you honestly expect anything else?');
         }
-        return view('user.show', ['user' => User::find($id)]);
+        return view('user.show', ['user' => $user]);
     }
 
     /**
