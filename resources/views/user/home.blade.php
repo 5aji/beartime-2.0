@@ -1,11 +1,7 @@
 @extends('layouts.app')
 
-@section('crumb')
-    home
-@endsection
-
-
 @section('content')
+    @include('layouts.navbar')
     <div class="container">
         <div class="row">
             <radial-view></radial-view>

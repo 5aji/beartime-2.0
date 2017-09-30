@@ -5,6 +5,7 @@ namespace App;
 use Carbon\Carbon;
 use Faker\Provider\DateTime;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Cache;
 
 class Schedule extends Model
 {
@@ -25,7 +26,7 @@ class Schedule extends Model
 
     /**
      * @param string $date optional date to check.
-     * @return Schedule $today the schedule for that day.
+     * @return Schedule $day the schedule for that day.
      */
     public static function day($date = null)
     {
@@ -43,6 +44,17 @@ class Schedule extends Model
             return Schedule::where('name', $date->format('l'))->first();
         }
 
+    }
+    /**
+     * Same as day(), but cached for today.
+     *
+     * @return Schedule $today today's schedule.
+     */
+    public static function today()
+    {
+        return Cache::remember('today', Carbon::now()->endOfDay(), function () {
+            return Schedule::day();
+        });
     }
 
     /**
@@ -66,5 +78,15 @@ class Schedule extends Model
             $date->addDay();
         }
         return $week;
+    }
+    /**
+     * Returns an array of schedules for this week.
+     * @return array $week
+     */
+    public static function thisWeek()
+    {
+        return Cache::remember('thisWeek', Carbon::now()->endOfWeek(), function () {
+            return Schedule::week();
+        });
     }
 }

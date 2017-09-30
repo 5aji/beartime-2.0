@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreSchedule;
+use App\Jobs\UpdateTodaysSchedule;
+use App\Jobs\UpdateWeeksSchedule;
 use App\Schedule;
 use Illuminate\Http\Request;
 
@@ -44,6 +46,8 @@ class ScheduleResourceController extends Controller
         $schedule->name = $request->name;
         $schedule->number = $request->number;
         $schedule->blocks()->createMany($request->blocks);
+        UpdateTodaysSchedule::dispatch();
+        UpdateWeeksSchedule::dispatch();
      }
 
     /**
@@ -91,5 +95,7 @@ class ScheduleResourceController extends Controller
     {
         //
         $schedule->delete();
+        UpdateTodaysSchedule::dispatch();
+        UpdateWeeksSchedule::dispatch();
     }
 }
