@@ -22,7 +22,7 @@
 
         <div class="ui top huge inverted attached pointing menu">
             <div class="ui container">
-                <a class="item">
+                <a class="item" href="{{ @route('user.home') }}">
                     Home
                 </a>
                 <a class="item">
@@ -43,6 +43,17 @@
                                 <a class="item" href="{{ @route('user.options') }}">
                                     Options
                                 </a>
+                                @if(Auth::user()->hasRoles(['admin']))
+                                    <a class="item" href="{{ route('admin.index') }}">
+                                        Admin Console
+                                    </a>
+                                @endif
+                                @if(Auth::user()->hasRoles(['moderator']))
+                                    {{--FIXME: route to proper place--}}
+                                    <a class="item" href="{{ route('admin.index') }}">
+                                        Moderator Console
+                                    </a>
+                                @endif
                                 <a class="item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                     Logout
