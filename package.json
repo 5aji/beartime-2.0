@@ -18,5 +18,9 @@
         "lodash": "^4.17.4",
         "semantic-ui": "^2.2.13",
         "vue": "^2.1.10"
+    },
+    "dependencies": {
+        "semantic-ui-vue2": "^2.4.2",
+        "vue-router": "^3.0.0"
     }
 }

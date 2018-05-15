@@ -14,8 +14,8 @@ class UserController extends Controller
     public function options(Request $request) {
         return view('user.options', ['user' => $request->user()]);
     }
-    public function home(Request $request) {
-        return view('user.home', ['user' => $request->user()]);
+    public function dashboard(Request $request) {
+        return view('user.dashboard', ['user' => $request->user()]);
     }
 
 }

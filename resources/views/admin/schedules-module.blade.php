@@ -1,9 +1,9 @@
-<div class="panel panel-default">
-    <div class="panel-heading">
-        Schedules
+<div class="ui segments">
+    <div class="ui segment">
+        <h1 class="header">Schedules</h1>
     </div>
-    <div class="panel-body">
-        <table class="table">
+    <div class="ui segment">
+        <table class="ui celled table">
             <thead>
             <tr>
                 <th>Name</th>
@@ -14,17 +14,17 @@
             <tbody>
             @foreach(App\Schedule::paginate(10) as  $schedule)
                 <tr>
-                    <th>{{ $schedule->name }}</th>
-                    <th>{{ $schedule->date }}</th>
-                    <th><a class="btn btn-primary btn-sm"
-                           href="{{@route('schedules.show', $schedule->id)}}">Edit</a></th>
+                    <td>{{ $schedule->name }}</td>
+                    <td>{{ $schedule->date }}</td>
+                    <td><a class="btn btn-primary btn-sm"
+                           href="{{@route('schedules.show', $schedule->id)}}">Edit</a></td>
                 </tr>
             @endforeach
             </tbody>
         </table>
     </div>
-    <div class="panel-footer">
-        <a class="btn btn-primary"
+    <div class="ui segment">
+        <a class="ui primary button"
            href="{{@route('schedules.index')}}">Show More</a>
     </div>
 </div>

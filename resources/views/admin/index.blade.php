@@ -6,17 +6,13 @@
 
 
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        @include('admin.users-module')
-                        @include('admin.roles-module')
-                        @include('admin.schedules-module')
-                    </div>
-                </div>
-            </div>
+    @include('layouts.navbar')
+    <div class="ui middle aligned center aligned grid very padded">
+        <div class="eight wide column">
+            @include('admin.users-module')
+            @include('admin.roles-module')
+            @include('admin.schedules-module')
         </div>
+
     </div>
 @endsection

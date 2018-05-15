@@ -27,8 +27,8 @@ class UsersTableSeeder extends Seeder
         if(App::environment('local')) {
             factory(User::class,10)->create()->each(function ($u) {
                 $u->role()->associate(Role::find(1));
-                $u->classes()->saveMany(factory(App\ClassConfig::class, 2)->make());
-                $u->classes()->save(factory(App\ClassConfig::class)->states(['single_day'])->make());
+                $u->classConfigs()->saveMany(factory(App\ClassConfig::class, 2)->make());
+                $u->classConfigs()->save(factory(App\ClassConfig::class)->states(['single_day'])->make());
             });
         }
     }

@@ -1,7 +1,9 @@
-<div class="panel panel-default">
-    <div class="panel-heading">Roles</div>
-    <div class="panel-body">
-        <table class="table">
+<div class="ui segments">
+    <div class="ui segment">
+        <h1 class="ui header">Roles</h1>
+    </div>
+    <div class="ui segment">
+        <table class="ui celled table">
             <thead>
             <tr>
                 <th>Name</th>
@@ -12,9 +14,9 @@
             <tbody>
             @foreach(App\Role::all() as $role)
                 <tr>
-                    <th>{{ $role->name }}</th>
-                    <th>{{ $role->description }}</th>
-                    <th>{{ $role->users()->count() }}</th>
+                    <td>{{ $role->name }}</td>
+                    <td>{{ $role->description }}</td>
+                    <td>{{ $role->users()->count() }}</td>
                 </tr>
             @endforeach
             </tbody>

@@ -1,7 +1,9 @@
-<div class="panel panel-default">
-    <div class="panel-heading">Users</div>
-    <div class="panel-body">
-        <table class="table">
+<div class="ui segments">
+    <div class="ui segment">
+        <h1 class="ui header">Users</h1>
+    </div>
+    <div class="ui segment">
+        <table class="ui celled table">
             <thead>
             <tr>
                 <th>Name</th>
@@ -13,16 +15,16 @@
             <tbody>
             @foreach($users as $user)
                 <tr>
-                    <th>{{ $user->name }}</th>
-                    <th>{{ $user->email }}</th>
-                    <th>{{ $user->role->name }}</th>
-                    <th><a class="btn btn-primary btn-sm" href="{{@route('users.show', $user->id)}}">Edit</a></th>
+                    <td>{{ $user->name }}</td>
+                    <td>{{ $user->email }}</td>
+                    <td>{{ $user->role->name }}</td>
+                    <td><a class="btn btn-primary btn-sm" href="{{@route('users.show', $user->id)}}">Edit</a></td>
                 </tr>
             @endforeach
             </tbody>
         </table>
     </div>
-    <div class="panel-footer">
-        <a class="btn btn-primary" href="{{ @route('users.index') }}">See More</a>
+    <div class="ui segment">
+        <a class="ui primary button" href="{{ @route('users.index') }}">See More</a>
     </div>
 </div>

@@ -8,17 +8,21 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-
+window.VueRouter = require('vue-router');
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+Vue.use(VueRouter);
+
 Vue.component('example', require('./components/Example.vue'));
 Vue.component('scheduleform', require('./components/ScheduleForm.vue'));
 Vue.component('RadialView', require('./components/RadialView.vue'));
-
-const app = new Vue({
-    el: '#app'
-});
+Vue.component('dashboard', require('./components/Dashboard.vue'));
+window.onload = function () {
+    const app = new Vue({
+        el: '#app'
+    });
+}

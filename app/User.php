@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -26,7 +27,7 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-    public function classes() {
+    public function classConfigs() {
         return $this->hasMany('App\ClassConfig');
     }
 
@@ -48,13 +49,26 @@ class User extends Authenticatable
      * @param Schedule $schedule The schedule to process
      * @return Schedule $output The output
      */
+    //TODO: Finish this function
     public function customizeSchedule(Schedule $schedule) {
-        $classes = $this->classes()->get();
+        if ($schedule->date == null) {
+            // no date, use id
+            $scheduleDotw = $schedule->id;
+        } else {
+            // date, parse it with carbon and get dotw
+            $scheduleDotw = Carbon::parse($schedule->date)->dayOfWeek;
+        }
+        // get all class configs where date matches schedule or doesn't exist.
+        $classConfigs = $this->classConfigs()->where('day', null)->orWhere('day', $scheduleDotw);
+        foreach($classConfigs->whereNotNull('day')->get() as $key=>$val) {
+            $classConfigs->whereNull('day');
+        }
         foreach($schedule->blocks()->get() as $block) {
             if ($block->number !== null) {
-                // the block has number, find it.
-
+                // the block has number, find it in the config
+                $block->name = $classConfigs->where('name', $block->name)->name;
             }
         }
+        return $schedule;
     }
 }

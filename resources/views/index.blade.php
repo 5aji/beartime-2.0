@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title')
+    Beartime
+@endsection
 @section('styles')
     <style type="text/css">
 

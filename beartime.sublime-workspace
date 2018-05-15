@@ -1,0 +1,1136 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"make",
+				"makeEspArduino"
+			],
+			[
+				"ap",
+				"\\approx                                           \tlatex-mathsymbols"
+			],
+			[
+				"sr",
+				"\\sqrt[root]{arg}                                  \tlatex-document"
+			],
+			[
+				"sec",
+				"\\section{title}                                   \tlatex-document"
+			],
+			[
+				"AP",
+				"AP_Euro_1-7"
+			],
+			[
+				"ren",
+				"Renaissance"
+			],
+			[
+				"A",
+				"AP_Euro_1-6"
+			],
+			[
+				"eq",
+				"equation                                          \tlatex-document"
+			],
+			[
+				"fig",
+				"fig:graph1"
+			],
+			[
+				"inc",
+				"\\includegraphics{name}                            \tlatex-document"
+			],
+			[
+				"cap",
+				"\\caption{title}                                   \tlatex-document"
+			],
+			[
+				"fi",
+				"figure                                            \tlatex-document"
+			],
+			[
+				"use",
+				"\\usepackage{package}                              \tlatex-document"
+			],
+			[
+				"unique",
+				"uniqueness"
+			],
+			[
+				"doc",
+				"\\documentclass{style}                             \tlatex-document"
+			],
+			[
+				"be",
+				"begin\t\\begin{}…\\end{}"
+			],
+			[
+				"rver",
+				"\\rvert                                            \tamsmath"
+			],
+			[
+				"lver",
+				"\\lvert                                            \tamsmath"
+			],
+			[
+				"equa",
+				"equation*                                         \tamsmath"
+			],
+			[
+				"inf",
+				"\\infty                                            \tlatex-mathsymbols"
+			],
+			[
+				"in",
+				"\\include{file}                                    \tlatex-document"
+			],
+			[
+				"Ap",
+				"AP_Euro_1-1"
+			],
+			[
+				"para",
+				"\\paragraph{title}                                 \tlatex-document"
+			],
+			[
+				"do",
+				"\\documentclass{style}                             \tlatex-document"
+			],
+			[
+				"align",
+				"align-self"
+			],
+			[
+				"menu",
+				"menu-button"
+			],
+			[
+				"time",
+				"timeSuffix"
+			],
+			[
+				"temp",
+				"tempData"
+			],
+			[
+				"clas",
+				"class"
+			],
+			[
+				"secon",
+				"seconds"
+			],
+			[
+				"CHANGE",
+				"CHANGE_VIEW_MODE"
+			],
+			[
+				"cu",
+				"currentClass"
+			],
+			[
+				"curre",
+				"currentClass"
+			],
+			[
+				"block",
+				"blockNumber"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"new",
+				"newTodo"
+			],
+			[
+				"re",
+				"required"
+			],
+			[
+				"todo-",
+				"todo-select"
+			],
+			[
+				"class",
+				"classNames"
+			],
+			[
+				"minut",
+				"minutes"
+			],
+			[
+				"numbe",
+				"numberWrapper"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"seconds",
+				"secondsArray"
+			],
+			[
+				"T",
+				"todoAdder"
+			],
+			[
+				"todo",
+				"todoAdder"
+			],
+			[
+				"to",
+				"todos"
+			],
+			[
+				"tran",
+				"translate3d"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"mu",
+				"mutableName"
+			],
+			[
+				"current",
+				"currentClassParam"
+			],
+			[
+				"calc",
+				"calcClass"
+			],
+			[
+				"map",
+				"mapState"
+			],
+			[
+				"commi",
+				"commitName"
+			],
+			[
+				"inputt",
+				"inputt\tinput - text"
+			],
+			[
+				"lo",
+				"localStoragePlugin"
+			],
+			[
+				"CH",
+				"CHANGE_BLOCK_OPTIONS"
+			],
+			[
+				"cur",
+				"cursorPos"
+			],
+			[
+				"string",
+				"stringArray"
+			],
+			[
+				"strin",
+				"stringArray2"
+			],
+			[
+				"sub",
+				"substring"
+			],
+			[
+				"curso",
+				"cursorPos"
+			],
+			[
+				"strig",
+				"stringArray"
+			],
+			[
+				"transl",
+				"translateY"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"Bl",
+				"blurEditor"
+			],
+			[
+				"blur",
+				"blurEditor"
+			],
+			[
+				"focuse",
+				"focused"
+			],
+			[
+				"cursor",
+				"cursor-blink"
+			],
+			[
+				"animation",
+				"animation-fill-mode"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"value",
+				"valueOf"
+			],
+			[
+				"add",
+				"addTodo"
+			],
+			[
+				"pre",
+				"preText"
+			],
+			[
+				"key",
+				"keygen\t<keygen>"
+			],
+			[
+				"te",
+				"Text"
+			],
+			[
+				"de",
+				"describe\tdescribe"
+			],
+			[
+				"parser",
+				"parserWeek"
+			],
+			[
+				"schd",
+				"schedule"
+			],
+			[
+				"speci",
+				"specialsArray"
+			],
+			[
+				"sche",
+				"schedule"
+			],
+			[
+				"today",
+				"todaySpecials"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"servi",
+				"services"
+			],
+			[
+				"Parser",
+				"parserWeek"
+			],
+			[
+				"Team",
+				"TeamMembers"
+			],
+			[
+				"up",
+				"update"
+			],
+			[
+				"theme",
+				"themeService"
+			],
+			[
+				"them",
+				"changeTheme"
+			],
+			[
+				"custom",
+				"custompalatte"
+			],
+			[
+				"local",
+				"localStorage"
+			],
+			[
+				"loc",
+				"localStorage"
+			],
+			[
+				"next",
+				"nextClass"
+			],
+			[
+				"get",
+				"getProperty"
+			],
+			[
+				"auth",
+				"authService"
+			],
+			[
+				"ind",
+				"indexSpecial"
+			],
+			[
+				"spec",
+				"specialschedule"
+			],
+			[
+				"spe",
+				"specials"
+			],
+			[
+				"is",
+				"isArray"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"PdfLaTeX"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 345.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"sidebar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"color schem",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"da ui",
+				"DA UI: Select Skin"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"daui",
+				"DA UI: Select Accent"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"color scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"impo",
+				"Deviot: Import Library"
+			],
+			[
+				"impor",
+				"Deviot: Import Library"
+			],
+			[
+				"deviot im",
+				"Deviot: Import Library"
+			],
+			[
+				"deviot find",
+				"Deviot: Find/Install Library"
+			],
+			[
+				"deviot library",
+				"Deviot: Find/Install Library"
+			],
+			[
+				"deviot",
+				"Deviot: New Sketch"
+			],
+			[
+				"comp",
+				"Deviot: Compile"
+			],
+			[
+				"include",
+				"Snippet: Deviot include syslib"
+			],
+			[
+				"ayu",
+				"ayu: Activate theme"
+			],
+			[
+				"rebuild",
+				"Deviot: Rebuild Library List"
+			],
+			[
+				"com",
+				"Deviot: Compile"
+			],
+			[
+				"compi",
+				"Deviot: Compile"
+			],
+			[
+				"deviot board",
+				"Deviot: Select Board"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"latextools",
+				"LaTeXTools: Build cache of LaTeX packages"
+			],
+			[
+				"boxy",
+				"Boxy Theme: Activation"
+			],
+			[
+				"thee",
+				"Boxy Theme: Activation"
+			],
+			[
+				"build",
+				"Build With: LaTeX - PdfLaTeX"
+			],
+			[
+				"Snippet: LateX",
+				"Snippet: Insert a LaTeX environment"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"box",
+				"Boxy Theme: Extras"
+			],
+			[
+				"latext",
+				"LaTeXTools: Open Detexify"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"lat",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"omnisharpsublime",
+				"OmniSharpSublime: Code Actions"
+			],
+			[
+				"remove p",
+				"Package Control: Remove Package"
+			],
+			[
+				"omnisharp",
+				"OmniSharpSublime: Reload Solution"
+			],
+			[
+				"remote",
+				"Package Control: Remove Repository"
+			],
+			[
+				"insatll",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Remove Package"
+			],
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"hex",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"vuec",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"tod",
+				"TodoReview: Project Files"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"stand",
+				"Standard Format: Format current file"
+			],
+			[
+				"lint",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"format",
+				"Standard Format: Format current file"
+			],
+			[
+				"mul",
+				"SelectMultiLines"
+			],
+			[
+				"list packa",
+				"Package Control: List Packages"
+			],
+			[
+				"linter",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"bea",
+				"HTMLBeautify"
+			],
+			[
+				"eslint",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
+				"eslin",
+				"ESLint"
+			],
+			[
+				"typescript",
+				"Build With: TypeScript"
+			],
+			[
+				"mark",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"select ",
+				"SelectMultiLines"
+			],
+			[
+				"settings",
+				"Preferences: Settings - Default"
+			],
+			[
+				"coffee",
+				"Build With: CoffeeScript"
+			],
+			[
+				"coffe",
+				"Coffee: Toggle Watch Mode"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 269.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			" import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"exit",
+			"exit()",
+			"etexit",
+			"eixt",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/kschamplin19/Code/beartime"
+	],
+	"file_history":
+	[
+		"/Users/kschamplin19/Library/Application Support/Sublime Text 3/Packages/DA UI/DA Theme.sublime-settings",
+		"/Users/kschamplin19/Library/Application Support/Sublime Text 3/Packages/User/DA Theme.sublime-settings",
+		"/Users/kschamplin19/Downloads/beartime-9facf-2017-10-25-export.json",
+		"/Users/kschamplin19/Downloads/beartime-9facf-2018-04-20-export.json",
+		"/Users/kschamplin19/Code/foundry/Makefile",
+		"/Users/kschamplin19/Code/foundry/platformio.ini",
+		"/Users/kschamplin19/Code/foundry/lib/readme.txt",
+		"/Users/kschamplin19/Code/foundry/foundry/foundry.ino",
+		"/Users/kschamplin19/Code/foundry/src/main.cpp",
+		"/Users/kschamplin19/Code/foundry/src/main.c",
+		"/Users/kschamplin19/Code/foundry/foundry.ino",
+		"/Users/kschamplin19/Desktop/3.txt",
+		"/Users/kschamplin19/Downloads/Ableton.Live.Suite.v10.0.1.MacOSX.Incl.Patched.and.Keygen-R2R/R2R.nfo",
+		"/Users/kschamplin19/Documents/TeX/Classes/Science/Force Lab/Force Lab.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Math/Math Writeups 10.tex",
+		"/Users/kschamplin19/Desktop/N++.app/Contents/Resources/activated.ini",
+		"/Users/kschamplin19/Documents/TeX/Classes/Math/Math Writeup 9.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Math/Math Writeup 9.pdf",
+		"/Users/kschamplin19/Documents/TeX/Classes/Math/Math Writeups 8.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Math/Math Writeups 7.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Math/Math Writeups week 6.tex",
+		"/Users/kschamplin19/Desktop/ftpass.txt",
+		"/Users/kschamplin19/Desktop/mstoolkit.txt",
+		"/Users/kschamplin19/Desktop/ftp.txt",
+		"/Users/kschamplin19/Downloads/beartime-9facf-2017-10-13-export(1).json",
+		"/Users/kschamplin19/Desktop/test.json",
+		"/Users/kschamplin19/Desktop/Problem 45.png",
+		"/Users/kschamplin19/Documents/TeX/Classes/Social Studies/AP Euro World 2/AP_Euro_2-3.tex",
+		"/Volumes/Tower/license",
+		"/Users/kschamplin19/Documents/TeX/Classes/Math/Math Writeups week 5.pdf",
+		"/Users/kschamplin19/Documents/TeX/Classes/Social Studies/AP Euro World 2/AP_Euro_2-1.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Social Studies/AP Euro World 2/AP_Euro_2-2.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Math/Math Writeups week 5.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Social Studies/AP Euro World 2/AP Euro World 2.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Math/Ch 1. Professional Problem/Ch 1 Professional Problem.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Social Studies/AP Euro World 1/AP_Euro_1-7.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Social Studies/AP Euro World 1/AP_Euro_1-6.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Science/Accel Lab/accel lab.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Social Studies/AP Euro World 1/AP Euro World 1.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Social Studies/AP Euro World 1/AP_Euro_1-4.tex",
+		"/Users/kschamplin19/Documents/data.csv",
+		"/Users/kschamplin19/Documents/TeX/Classes/Science/Accel Lab/data.csv",
+		"/Users/kschamplin19/Desktop/data.csv",
+		"/Users/kschamplin19/Documents/TeX/Classes/Math/Math Writeup week 3.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Math/Math Writeups week 2.tex",
+		"/Users/kschamplin19/Documents/TeX/TeX.sublime-project",
+		"/Users/kschamplin19/Documents/TeX/Classes/Social Studies/AP Euro World 1.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Social Studies/AP_Euro_1-2.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Social Studies/AP_Euro_1-3.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Social Studies/AP_Euro_1-1.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Social Studies/AP Euro 2-1.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Social Studies/AP Euro 2-1",
+		"/Users/kschamplin19/Documents/TeX/Classes/Math/math writeups.tex",
+		"/Users/kschamplin19/Documents/TeX/Classes/Math/math writeups.pdf",
+		"/Users/kschamplin19/Documents/TeX/Classes/English/english writing 4.tex",
+		"/Users/kschamplin19/Documents/Math writeup 1.tex",
+		"/Users/kschamplin19/Documents/math writeups.tex",
+		"/Users/kschamplin19/Documents/beartime2.txt",
+		"/Users/kschamplin19/Downloads/English Paper 1.tex",
+		"/Users/kschamplin19/Library/Application Support/Mozilla/chrome/userChrome.css",
+		"/Users/kschamplin19/mac.ovpn",
+		"/Users/kschamplin19/Downloads/17013 She is my wife/a14.bme",
+		"/Users/kschamplin19/Downloads/17013 She is my wife/b7.bme",
+		"/Users/kschamplin19/Downloads/17013 She is my wife/h7.bme",
+		"/Users/kschamplin19/Downloads/17013 She is my wife/h14.bme",
+		"/Users/kschamplin19/Downloads/17013 She is my wife/n7.bme",
+		"/Users/kschamplin19/Downloads/17013 She is my wife/n14.bme",
+		"/Users/kschamplin19/Downloads/17013 She is my wife/a7.bme",
+		"/Users/kschamplin19/Downloads/16045 THANK YOU FOR PLAYING/a7.bme",
+		"/Users/kschamplin19/Downloads/16045 THANK YOU FOR PLAYING/a14.bme",
+		"/Users/kschamplin19/Downloads/16045 THANK YOU FOR PLAYING/h14.bme",
+		"/Users/kschamplin19/Downloads/16045 THANK YOU FOR PLAYING/n14.bme",
+		"/Users/kschamplin19/Downloads/16045 THANK YOU FOR PLAYING/n7.bme",
+		"/Users/kschamplin19/Downloads/16045 THANK YOU FOR PLAYING/h7.bme",
+		"/Users/kschamplin19/Downloads/angelic snow - Est/02_asrmx_7h.bme",
+		"/Users/kschamplin19/Downloads/angelic snow - Est/03_asrmx_7a.bme",
+		"/Users/kschamplin19/Downloads/NavUnit.cs",
+		"/Users/kschamplin19/Documents/FamilyWise Game/Assets/Scripts/Gestures.cs",
+		"/Users/kschamplin19/Documents/FamilyWise Game/Assets/Scripts/Map/MapGenerator.cs",
+		"/Users/kschamplin19/Test/ProjectSettings/ProjectSettings.asset",
+		"/Users/kschamplin19/Downloads/Tile Movement Tutorial ep6 - BONUS CONTENT/Assets/TileMap.cs",
+		"/Users/kschamplin19/Documents/FamilyWise Game/Assets/Resources/Interactables.xml",
+		"/Users/kschamplin19/Downloads/Tile Movement Tutorial ep6/Assets/Unit.cs",
+		"/Users/kschamplin19/Downloads/Tile Movement Tutorial ep6/Assets/TileMap.cs",
+		"/Users/kschamplin19/Documents/SDVX_ASC/cmake/teensy-arm.toolchain.cmake",
+		"/Users/kschamplin19/Documents/SDVX_ASC/cmake/Teensy.cmake",
+		"/Users/kschamplin19/Documents/SDVX_ASC/cmake-build-debug/bin/sdvx.elf.hex",
+		"/Users/kschamplin19/Documents/teensy_libs/.gitignore",
+		"/Users/kschamplin19/Desktop/Arduino.app/Contents/Java/hardware/teensy/avr/cores/teensy3/Makefile",
+		"/Users/kschamplin19/Desktop/libroot/toolchain/teensy_post_compile",
+		"/Users/kschamplin19/Documents/SDVX_ASC/corelib/readme.txt",
+		"/Users/kschamplin19/Documents/SDVX_ASC/corelib/usb_arcade.c",
+		"/Users/kschamplin19/Documents/SDVX_ASC/corelib/usb_arcade.h",
+		"/Users/kschamplin19/Documents/SDVX_ASC/corelib/usb_desc.c",
+		"/Users/kschamplin19/Desktop/Arduino.app/Contents/Java/hardware/teensy/avr/platform.txt.notyqt",
+		"/Users/kschamplin19/Documents/SDVX_ASC/SDVX_ASC.ino",
+		"/Users/kschamplin19/Desktop/Arduino.app/Contents/Java/hardware/teensy/avr/platform.txt",
+		"/Users/kschamplin19/Library/Application Support/Sublime Text 3/Packages/User/Stino/Preferences.stino-settings",
+		"/Users/kschamplin19/Library/Application Support/Sublime Text 3/Packages/User/Stino/preset/platform.settings",
+		"/Users/kschamplin19/Documents/SDVX_ASC/Arcade_RECV_Test.ino",
+		"/Users/kschamplin19/Library/Application Support/Sublime Text 3/Packages/Stino-new-stino/preset/platform.settings",
+		"/Users/kschamplin19/Library/Application Support/Sublime Text 3/Packages/Stino-new-stino/preset/ram_size.settings",
+		"/Users/kschamplin19/Downloads/proper_leonardo_sdvx/USB core files/USBAPI.h",
+		"/Users/kschamplin19/Downloads/proper_leonardo_sdvx/USB core files/USBCore.cpp",
+		"/Users/kschamplin19/Downloads/proper_leonardo_sdvx/pinoutconfig.h",
+		"/Users/kschamplin19/Documents/Arduino/sketch_jan27b/sketch_jan27b.ino",
+		"/Users/kschamplin19/Downloads/usb_rawhid/example.c",
+		"/Users/kschamplin19/Library/Application Support/RimWorld/Saves/faction backup.rws",
+		"/Users/kschamplin19/Library/Application Support/RimWorld/Saves/Lakeside Ridge.rws",
+		"/Users/kschamplin19/Documents/beartime-web/src/index.js",
+		"/Users/kschamplin19/Documents/beartime-web/src/countdown.vue",
+		"/Users/kschamplin19/Downloads/dvkz4VI.bmp.hex",
+		"/Users/kschamplin19/Downloads/dvkz4VI.bmp.hex.bmp",
+		"/Users/kschamplin19/Downloads/dvkz4VI.bmp",
+		"/Users/kschamplin19/Downloads/20053 FLOWER/20053/a14.bme",
+		"/Users/kschamplin19/Desktop/beartime-manager/src/App.vue",
+		"/Users/kschamplin19/Desktop/beartime-manager/src/components/pageButton.vue",
+		"/Users/kschamplin19/Desktop/beartime-manager/src/assets/timerWorker.js",
+		"/Users/kschamplin19/Desktop/beartime-manager/src/components/countdown.vue",
+		"/Users/kschamplin19/Desktop/beartime-manager/src/components/menuController.vue",
+		"/Users/kschamplin19/Downloads/schedule.json",
+		"/Users/kschamplin19/Desktop/beartime-manager/index.html",
+		"/Users/kschamplin19/Desktop/beartime-manager/src/assets/_vars.sass",
+		"/Users/kschamplin19/Downloads/ionicons-2.0.1/css/ionicons.css",
+		"/Users/kschamplin19/Desktop/beartime-manager/src/assets/database.json",
+		"/Users/kschamplin19/Desktop/beartime-manager/src/main.js",
+		"/Users/kschamplin19/Desktop/beartime-manager/src/store/actions.js",
+		"/Users/kschamplin19/Desktop/beartime-manager/build/webpack.base.conf.js"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 49.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.1486156900.538232":
+	{
+		"height": 110.0
+	},
+	"output.1486156916.244493":
+	{
+		"height": 110.0
+	},
+	"output.SDVX_ASC":
+	{
+		"height": 110.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 132.0
+	},
+	"output.build|/Users/kschamplin19/Documents/SDVX_ASC|1486156944.896195":
+	{
+		"height": 110.0
+	},
+	"output.build|/Users/kschamplin19/Documents/SDVX_ASC|1486157173.64182":
+	{
+		"height": 110.0
+	},
+	"output.deviot":
+	{
+		"height": 264.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 155.0
+	},
+	"output.find_results":
+	{
+		"height": 98.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 98.0
+	},
+	"output.latextools":
+	{
+		"height": 112.0
+	},
+	"output.sketch_jan27b":
+	{
+		"height": 110.0
+	},
+	"output.stino_log":
+	{
+		"height": 25.0
+	},
+	"output.variable_get":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "beartime.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"acce",
+				"Classes/Science/Accel Lab/accel lab.tex"
+			],
+			[
+				"tilemap",
+				"Scripts/Map/TileMap.cs"
+			],
+			[
+				"ap",
+				"src/App.vue"
+			],
+			[
+				"app",
+				"src/App.vue"
+			],
+			[
+				"team",
+				"app/Models/Team.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "alien",
+		"selected_items":
+		[
+			[
+				"alien",
+				"~/Documents/alien-docker/alien-docker.sublime-project"
+			],
+			[
+				"",
+				"~/Code/C Sandbox/C Sandbox.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 255.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
